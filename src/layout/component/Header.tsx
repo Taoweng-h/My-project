@@ -1,10 +1,19 @@
+import { useNavigate } from "react-router-dom";
+
 import { Menu, Dropdown, Space } from 'antd'
 import { DownOutlined } from '@ant-design/icons'
 
 function Header(){
 
+  const navigate = useNavigate() 
+
+  function logout(){
+
+    navigate('/login')
+  }
+
   const menu = (
-    <Menu items={[
+    <Menu onClick={logout} items={[
       {
         label:'退出',
         key:'0'
