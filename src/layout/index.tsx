@@ -1,7 +1,9 @@
 
-import Header from './component/Header';
-import Sider from './component/Sider';
-import Content from './component/Content';
+import Header from './component/Header'
+import Sider from './component/Sider'
+import Content from './component/Content'
+
+import './style/layout.scss'
 
 function Layout(){
    return (

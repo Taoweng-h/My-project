@@ -1,6 +1,6 @@
 function Sider(){
   return (
-    <div>sider</div>
+    <div className="sider">sider</div>
   )
 }
 

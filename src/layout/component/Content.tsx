@@ -1,6 +1,6 @@
 function Content(){
   return (
-    <div>content</div>
+    <div className="content">content</div>
   )
 }
 
