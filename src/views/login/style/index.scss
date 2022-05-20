@@ -1,0 +1,25 @@
+.login-page{
+  height: 100%;
+  background-image: url('@/assets/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  contain: paint;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .submit-form{
+    width: 500px;
+    height: 360px;
+    background-color: rgba(250, 250, 250, .2);
+    .title{
+      color: #fff;
+      font-size: 26px;
+      padding: 15px 0;
+      border-bottom: 1px solid #dcdcdc;
+      text-align: center;
+    }
+    .form-wrap{
+      padding: 30px 50px 0;
+    }
+  }
+}

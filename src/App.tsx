@@ -12,7 +12,6 @@ function App() {
   // 未登录或登录信息丢失时重新登录
   useEffect(() => {
     if (getToken()) {
-      console.log('haveToken =>>')
     } else if (location.pathname !== '/login') {
       navigate('/login', { replace: true })
     }
