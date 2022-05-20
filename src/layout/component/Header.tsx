@@ -1,30 +1,29 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom'
 
 import { Menu, Dropdown, Space } from 'antd'
 import { DownOutlined } from '@ant-design/icons'
 
-function Header(){
+function Header() {
+  const navigate = useNavigate() //允许使用编程式导航
 
-  const navigate = useNavigate() 
-
-  function logout(){
-
-    navigate('/login')
+  function logout() {
+    navigate('/login', { replace: true })
   }
 
   const menu = (
-    <Menu onClick={logout} items={[
-      {
-        label:'退出',
-        key:'0'
-      }
-    ]} />
+    <Menu
+      onClick={logout}
+      items={[
+        {
+          label: '退出',
+          key: '0'
+        }
+      ]}
+    />
   )
   return (
     <div className="header">
-      <div className="logo">
-        logo
-      </div>
+      <div className="logo">logo</div>
       <Dropdown overlay={menu} trigger={['click']} className="head-dropdown">
         <a onClick={e => e.preventDefault()}>
           <Space>
